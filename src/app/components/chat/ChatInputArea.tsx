@@ -36,6 +36,7 @@ const ChatInputArea = ({
                     onMouseLeave={() => setIsHovered(false)}
                     className="mr-6 cursor-pointer"
                     disabled={!inputText.trim()}
+                    onClick={onSubmit}
                 >
                     <IoSend
                         size={24}

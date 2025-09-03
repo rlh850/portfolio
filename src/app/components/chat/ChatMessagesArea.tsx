@@ -3,7 +3,6 @@ import React from 'react';
 interface Message {
    id: number;
    text: string;
-   timestamp: Date;
    sender: 'user' | 'bot';
 }
 
