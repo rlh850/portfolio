@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const skills = ['Progrmaming', 'Design', 'AI', 'Sound Design'];
 
@@ -44,6 +45,24 @@ const Hero = () => {
                   {skill}
                </motion.div>
             ))}
+         </motion.div>
+
+         <motion.div
+            className="mt-8"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.5, duration: 0.8 }}
+         >
+            <a
+               href="https://github.com/rlh850/portfolio"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors duration-200 border border-gray-600 hover:border-gray-500"
+            >
+               <FaGithub className="text-xl" />
+               <span>View on GitHub</span>
+               <FaExternalLinkAlt className="text-sm" />
+            </a>
          </motion.div>
       </div>
    );

@@ -1,3 +1,4 @@
+import { chatRepository } from '../repository/chat.repository';
 import { chatService } from '../services/chat.service';
 import z from 'zod';
 
@@ -6,7 +7,7 @@ const sendMessageSchema = z.object({
       .string()
       .min(1, 'Message cannot be empty')
       .max(1000, 'Message too long'),
-   id: z.string().optional(),
+   id: z.string().uuid(),
 });
 
 export const chatController = {
@@ -24,9 +25,12 @@ export const chatController = {
             };
          }
 
+         const validatedMessage = validatedData.data.message;
+         let validatedId = validatedData.data.id;
+
          const response = await chatService.sendMessage(
-            validatedData.data.message,
-            validatedData.data.id
+            validatedMessage,
+            validatedId
          );
          return response;
       } catch (error) {

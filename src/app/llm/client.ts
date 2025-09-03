@@ -1,6 +1,6 @@
 import OpenAI from 'openai';
 import { systemPrompt } from './prompts/systemInstructions';
-import dotenv from 'dotenv'
+import dotenv from 'dotenv';
 
 dotenv.config();
 
@@ -34,7 +34,7 @@ export const llmClient = {
          input: prompt,
          instructions,
          max_output_tokens: maxTokens,
-         reasoning: {effort: 'minimal'},
+         reasoning: { effort: 'minimal' },
          previous_response_id: previousResponseId,
       });
       return {

@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import ChatMessagesArea from './ChatMessagesArea';
 import ChatInputArea from './ChatInputArea';
 
@@ -16,6 +16,8 @@ const ChatWindow = () => {
       },
    ]);
    const [inputText, setInputText] = useState('');
+
+   const chatId = useRef(crypto.randomUUID());
 
    const handleSubmit = async (e: React.FormEvent) => {
       e.preventDefault();
@@ -34,6 +36,7 @@ const ChatWindow = () => {
                headers: { 'Content-Type': 'application/json' },
                body: JSON.stringify({
                   message: inputText,
+                  id: chatId.current,
                }),
             });
 
