@@ -59,7 +59,7 @@ const ChatWindow = () => {
 
    return (
       <div className="flex justify-center mt-5 font-mono">
-         <div className="bg-gray-100 w-full max-w-2xl h-96 rounded-2xl border border-gray-300 flex flex-col">
+         <div className="bg-white w-full max-w-2xl h-96 rounded-2xl flex flex-col">
             <ChatMessagesArea messages={messages} />
             <ChatInputArea
                inputText={inputText}

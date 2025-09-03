@@ -23,9 +23,9 @@ const page = () => {
                   x: ['-100%', '100vw'],
                }}
                transition={{
-                  duration: 100,
+                  duration: 50,
                   repeat: Infinity,
-                  ease: 'linear',
+                  ease: 'easeOut',
                }}
                className="inline-block"
             >
