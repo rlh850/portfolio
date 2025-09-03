@@ -1,7 +1,6 @@
 import React from 'react';
 
 interface Message {
-   id: number;
    text: string;
    sender: 'user' | 'bot';
 }
@@ -13,9 +12,9 @@ interface ChatMessagesAreaProps {
 const ChatMessagesArea = ({ messages }: ChatMessagesAreaProps) => {
    return (
       <div className="flex-1 overflow-y-auto p-4 space-y-3 no-scrollbar">
-         {messages.map((message) => (
+         {messages.map((message, index) => (
             <div
-               key={message.id}
+               key={index}
                className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}
             >
                <div
