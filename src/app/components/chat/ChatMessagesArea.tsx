@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
 
 interface Message {
@@ -11,11 +11,18 @@ interface ChatMessagesAreaProps {
 }
 
 const ChatMessagesArea = ({ messages }: ChatMessagesAreaProps) => {
+   const lastMessageRef = useRef<HTMLDivElement | null>(null);
+
+   useEffect(() => {
+      lastMessageRef.current?.scrollIntoView({ behavior: 'smooth' });
+   }, [messages]);
+
    return (
       <div className="flex-1 overflow-y-auto p-4 space-y-3 no-scrollbar">
          {messages.map((message, index) => (
             <div
                key={index}
+               ref={index === messages.length - 1 ? lastMessageRef : null}
                className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}
             >
                <div
