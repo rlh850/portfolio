@@ -12,7 +12,7 @@ const page = () => {
                 <div className="">
                     <Hero />
                 </div>
-                <div className="w-96">
+                <div className="w-1/2">
                     <ChatWindow />
                 </div>
             </div>
