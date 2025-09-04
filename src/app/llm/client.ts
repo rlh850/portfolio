@@ -26,7 +26,7 @@ export const llmClient = {
       model = process.env.MODEL,
       prompt,
       instructions = systemPrompt,
-      maxTokens = 1000,
+      maxTokens = 12000,
       previousResponseId,
    }: GenerateTextOptions): Promise<GenerateTextResult> {
       const response = await openAIClient.responses.create({
