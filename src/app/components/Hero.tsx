@@ -57,7 +57,15 @@ const Hero = () => {
                href="https://github.com/rlh850/portfolio"
                target="_blank"
                rel="noopener noreferrer"
-               className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors duration-200 border border-gray-600 hover:border-gray-500"
+               className="
+               inline-flex items-center gap-2 px-6 py-3
+               text-white
+               rounded-lg
+               bg-gradient-to-r from-cyan-500 via-blue-500 to-red-500 bg-[length:200%_auto]
+               transition-all duration-500
+               hover:bg-right
+               hover:scale-105
+            "
             >
                <FaGithub className="text-xl" />
                <span>View on GitHub</span>

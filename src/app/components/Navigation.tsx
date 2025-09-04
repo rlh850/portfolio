@@ -1,20 +1,30 @@
-import React from 'react'
+import React from 'react';
 
-const pages = ['Home', 'Projects', 'About', 'Contact']
+const pages = ['Home', 'Projects', 'About', 'Contact'];
 
-const Navigation = () => {
-    return (
-        <nav className="flex gap-4 justify-center mt-4 font-mono">
-            {pages.map((page, index) => (
-                <li
-                    key={index}
-                    className="list-none text-white hover:text-gray-300 transition-colors cursor-pointer"
-                >
-                    {page}
-                </li>
-            ))}
-        </nav>
-    )
+interface NavigationProps {
+   activeSection: string;
+   setActiveSection: (section: string) => void;
 }
 
-export default Navigation
+const Navigation = ({ activeSection, setActiveSection }: NavigationProps) => {
+   return (
+      <nav className="flex gap-4 justify-center mt-4 font-mono">
+         {pages.map((page, index) => (
+            <li
+               key={index}
+               onClick={() => setActiveSection(page)}
+               className={`list-none cursor-pointer transition-colors border-b-2 border-transparent hover:border-white p-1 rounded transition-all duration-300 ease-in-out ${
+                  activeSection === page
+                     ? 'text-white border-white'
+                     : 'text-gray-400 hover:text-gray-300'
+               }`}
+            >
+               {page}
+            </li>
+         ))}
+      </nav>
+   );
+};
+
+export default Navigation;
