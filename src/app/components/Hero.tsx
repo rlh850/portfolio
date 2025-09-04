@@ -22,7 +22,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
          >
-            Self taught Software Engineer
+            Self Taught Software Engineer
          </motion.p>
 
          <motion.p
@@ -54,7 +54,7 @@ const Hero = () => {
             transition={{ delay: 1.5, duration: 0.8 }}
          >
             <a
-               href="https://github.com/rlh850/portfolio"
+               href="https://github.com/rlh850/next-saas-ai-starter"
                target="_blank"
                rel="noopener noreferrer"
                className="

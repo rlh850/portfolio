@@ -27,6 +27,19 @@ export const projects: Project[] = [
       liveUrl: '#',
       status: 'Live',
    },
+   {
+      title: 'Personal Saas Template',
+      description:
+         'This is my personal Tech Stack that I use for building projects by hand and for vibe coding.',
+      technologies: [
+         { name: 'Next.js', icon: SiNextdotjs },
+         { name: 'TypeScript', icon: SiTypescript },
+         { name: 'Tailwind CSS', icon: SiTailwindcss },
+      ],
+      githubUrl: 'https://github.com/rlh850/portfolio',
+      liveUrl: '#',
+      status: 'Live',
+   },
    // More projects go here
 ];
 
