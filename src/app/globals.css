@@ -67,17 +67,15 @@ body {
   pointer-events: none;
 }
 
-/* Outer glow */
+/* Outer glow, colors are from the Sentai Series Gokaiger */
 .gradient-border::before {
   background: conic-gradient(from var(--gradient-angle),
-    #ff2d55,
-    #ff9f0a,
-    #ffd60a,
-    #34c759,
-    #64d2ff,
-    #0a84ff,
-    #bf5af2,
-    #ff2d55
+    #D50000,
+    #005BBB,
+    #FFD600,
+    #008444,
+    #F55D75,
+    #C0C0C0
   );
   filter: blur(18px);
   opacity: 0.7;

@@ -9,12 +9,14 @@ const page = () => {
    return (
       <div>
          <Navigation />
-         <div className="flex justify-center p-4">
-            <div className="">
-               <Hero />
-            </div>
-            <div className="w-1/2">
-               <ChatWindow />
+         <div className="flex justify-center items-center p-4">
+            <div className="flex max-w-7xl w-full">
+               <div className="flex-1">
+                  <Hero />
+               </div>
+               <div className="flex-1">
+                  <ChatWindow />
+               </div>
             </div>
          </div>
          <div className="overflow-hidden whitespace-nowrap">

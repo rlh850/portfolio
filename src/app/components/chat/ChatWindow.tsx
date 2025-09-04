@@ -11,7 +11,7 @@ interface Message {
 const ChatWindow = () => {
    const [messages, setMessages] = useState<Message[]>([
       {
-         text: 'Welcome to the chat!',
+         text: 'Welcome!',
          sender: 'bot',
       },
    ]);
@@ -61,7 +61,7 @@ const ChatWindow = () => {
    };
 
    return (
-      <div className="flex justify-center mt-5 font-mono">
+      <div className="mt-5 font-mono">
          <div className="gradient-border w-full max-w-2xl rounded-2xl">
             <div className="bg-white h-96 rounded-2xl flex flex-col">
                <ChatMessagesArea messages={messages} />

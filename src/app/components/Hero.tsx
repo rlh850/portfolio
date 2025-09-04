@@ -6,9 +6,9 @@ const skills = ['Progrmaming', 'Design', 'AI', 'Sound Design'];
 
 const Hero = () => {
    return (
-      <div className="flex flex-col flex-1 p-4">
+      <div className="flex flex-col flex-1 p-4 font-mono">
          <motion.h1
-            className="text-8xl"
+            className="text-7xl"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -26,7 +26,7 @@ const Hero = () => {
          </motion.p>
 
          <motion.p
-            className="italic text-gray-200"
+            className="italic text-gray-200 text-xs mt-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 0.8 }}
@@ -37,7 +37,7 @@ const Hero = () => {
             {skills.map((skill, index) => (
                <motion.div
                   key={index}
-                  className="bg-gray-400 p-1 rounded mt-1"
+                  className="border-b-2 border-transparent hover:border-white p-1 rounded mt-1 transition-all duration-300 ease-in-out"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1, duration: 5 }}
