@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 import ChatWindow from './components/chat/ChatWindow';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
+import Art from './components/Art';
 import { motion } from 'motion/react';
 
 const page = () => {
@@ -32,13 +33,10 @@ const page = () => {
                   </div>
                </div>
             );
-         case 'About':
+         case 'Art':
             return (
                <div className="flex justify-center items-center p-4">
-                  <div className="max-w-4xl w-full text-center font-mono">
-                     <h1 className="text-6xl mb-8">About</h1>
-                     <p className="text-xl text-gray-200">Coming soon...</p>
-                  </div>
+                  <Art />
                </div>
             );
          case 'Contact':
@@ -62,21 +60,7 @@ const page = () => {
             setActiveSection={setActiveSection}
          />
          {renderContent()}
-         <div className="overflow-hidden whitespace-nowrap">
-            <motion.div
-               animate={{
-                  x: ['-100%', '100vw'],
-               }}
-               transition={{
-                  duration: 50,
-                  repeat: Infinity,
-                  ease: 'easeOut',
-               }}
-               className="inline-block"
-            >
-               Still working on this..bare with me
-            </motion.div>
-         </div>
+         <div className="overflow-hidden whitespace-nowrap"></div>
       </div>
    );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const pages = ['Home', 'Projects', 'About', 'Contact'];
+const pages = ['Home', 'Projects', 'Art', 'Contact'];
 
 interface NavigationProps {
    activeSection: string;
