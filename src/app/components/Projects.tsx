@@ -30,7 +30,7 @@ const Projects = () => {
             {projects.map((project, index) => (
                <motion.div
                   key={index}
-                  className="bg-gray-800/50 border border-gray-700 rounded-lg p-6 hover:border-gray-600 transition-all duration-300"
+                  className="bg-gray-800/50 border border-gray-700 rounded-4xl p-6 hover:border-gray-600 transition-all duration-300 gradient"
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5 + index * 0.2, duration: 0.8 }}

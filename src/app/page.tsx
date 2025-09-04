@@ -5,6 +5,7 @@ import ChatWindow from './components/chat/ChatWindow';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import Art from './components/Art';
+import Contact from './components/Contact';
 import { motion } from 'motion/react';
 
 const page = () => {
@@ -40,14 +41,7 @@ const page = () => {
                </div>
             );
          case 'Contact':
-            return (
-               <div className="flex justify-center items-center p-4">
-                  <div className="max-w-4xl w-full text-center font-mono">
-                     <h1 className="text-6xl mb-8">Contact</h1>
-                     <p className="text-xl text-gray-200">Coming soon...</p>
-                  </div>
-               </div>
-            );
+            return <Contact />;
          default:
             return null;
       }
