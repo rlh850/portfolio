@@ -41,3 +41,46 @@ body {
     /* Firefox */
   }
 }
+
+/* Animated gradient border*/
+@property --gradient-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotate-gradient-border {
+  to { --gradient-angle: 360deg; }
+}
+
+/* Contains the gradient to the div instead of taking up the entire space */
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::before,
+.gradient-border::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* Outer glow */
+.gradient-border::before {
+  background: conic-gradient(from var(--gradient-angle),
+    #ff2d55,
+    #ff9f0a,
+    #ffd60a,
+    #34c759,
+    #64d2ff,
+    #0a84ff,
+    #bf5af2,
+    #ff2d55
+  );
+  filter: blur(18px);
+  opacity: 0.7;
+  z-index: -2;
+  animation: rotate-gradient-border 6s linear infinite;
+}

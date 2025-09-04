@@ -34,7 +34,7 @@ export const llmClient = {
          input: prompt,
          instructions,
          max_output_tokens: maxTokens,
-         reasoning: { effort: 'minimal' },
+         reasoning: { effort: 'medium' },
          previous_response_id: previousResponseId,
       });
       return {
