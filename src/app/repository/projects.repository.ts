@@ -1,4 +1,3 @@
-import { FaReact, FaNodeJs, FaPython } from 'react-icons/fa';
 import { SiTypescript, SiTailwindcss, SiNextdotjs } from 'react-icons/si';
 
 export interface Project {

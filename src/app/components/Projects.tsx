@@ -23,7 +23,7 @@ const Projects = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
          >
-            Here are some of the projects I've been working on
+            Here are some of the projects I&apos;ve been working on
          </motion.p>
 
          <div className="grid gap-8">

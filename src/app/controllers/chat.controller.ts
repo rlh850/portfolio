@@ -1,4 +1,3 @@
-import { chatRepository } from '../repository/chat.repository';
 import { chatService } from '../services/chat.service';
 import z from 'zod';
 
@@ -26,14 +25,14 @@ export const chatController = {
          }
 
          const validatedMessage = validatedData.data.message;
-         let validatedId = validatedData.data.id;
+         const validatedId = validatedData.data.id;
 
          const response = await chatService.sendMessage(
             validatedMessage,
             validatedId
          );
          return response;
-      } catch (error) {
+      } catch {
          return { error: 'Failed to generate a response.' };
       }
    },

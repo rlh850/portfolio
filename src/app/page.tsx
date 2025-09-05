@@ -6,9 +6,8 @@ import Hero from './components/Hero';
 import Projects from './components/Projects';
 import Art from './components/Art';
 import Contact from './components/Contact';
-import { motion } from 'motion/react';
 
-const page = () => {
+const Page = () => {
    const [activeSection, setActiveSection] = useState('Home');
 
    const renderContent = () => {
@@ -59,4 +58,4 @@ const page = () => {
    );
 };
 
-export default page;
+export default Page;

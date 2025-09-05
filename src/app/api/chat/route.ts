@@ -11,6 +11,5 @@ export async function POST(req: NextRequest) {
    const message = body.message;
    const id = body.id;
    const response = await chatController.sendMessage(message, id);
-   console
    return NextResponse.json(response);
 }
