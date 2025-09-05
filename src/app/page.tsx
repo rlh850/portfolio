@@ -15,7 +15,7 @@ const Page = () => {
          case 'Home':
             return (
                <div className="flex justify-center items-center p-4">
-                  <div className="flex max-w-7xl w-full">
+                  <div className="flex flex-col md:flex-row max-w-7xl w-full gap-4 md:gap-0">
                      <div className="flex-1">
                         <Hero />
                      </div>

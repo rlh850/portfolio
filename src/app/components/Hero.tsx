@@ -8,7 +8,7 @@ const Hero = () => {
    return (
       <div className="flex flex-col flex-1 p-4 font-mono">
          <motion.h1
-            className="text-7xl"
+            className="text-4xl md:text-7xl"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -17,7 +17,7 @@ const Hero = () => {
          </motion.h1>
 
          <motion.p
-            className="text-2xl"
+            className="text-lg md:text-2xl"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
@@ -33,11 +33,11 @@ const Hero = () => {
          >
             There is always room to improve
          </motion.p>
-         <motion.div className="flex gap-4">
+         <motion.div className="flex gap-2 md:gap-4 flex-wrap">
             {skills.map((skill, index) => (
                <motion.div
                   key={index}
-                  className="border-b-2 border-transparent hover:border-white p-1 rounded mt-1 transition-all duration-300 ease-in-out"
+                  className="border-b-2 border-transparent hover:border-white p-1 rounded mt-1 transition-all duration-300 ease-in-out text-sm md:text-base"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1, duration: 5 }}
@@ -58,8 +58,8 @@ const Hero = () => {
                target="_blank"
                rel="noopener noreferrer"
                className="
-               inline-flex items-center gap-2 px-6 py-3
-               text-white
+               inline-flex items-center gap-2 px-4 md:px-6 py-2 md:py-3
+               text-white text-sm md:text-base
                rounded-lg
                bg-gradient-to-r from-cyan-500 via-blue-500 to-red-500 bg-[length:200%_auto]
                transition-all duration-500
@@ -67,9 +67,9 @@ const Hero = () => {
                hover:scale-105
             "
             >
-               <FaGithub className="text-xl" />
+               <FaGithub className="text-lg md:text-xl" />
                <span>View on GitHub</span>
-               <FaExternalLinkAlt className="text-sm" />
+               <FaExternalLinkAlt className="text-xs md:text-sm" />
             </a>
          </motion.div>
       </div>
