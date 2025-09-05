@@ -39,6 +39,19 @@ export const projects: Project[] = [
       liveUrl: '#',
       status: 'Live',
    },
+   {
+      title: 'AI Recipe Generator',
+      description:
+         'An AI-powered recipe and cooking assistant built with Next.js 15, featuring intelligent chat capabilities, real-time data synchronization, and OpenAI integration. Perfect for discovering recipes, getting cooking advice, and enhancing your culinary experience.',
+      technologies: [
+         { name: 'Next.js', icon: SiNextdotjs },
+         { name: 'TypeScript', icon: SiTypescript },
+         { name: 'Tailwind CSS', icon: SiTailwindcss },
+      ],
+      githubUrl: 'https://github.com/rlh850/RecipeCGI',
+      liveUrl: '#',
+      status: 'In Progress',
+   },
    // More projects go here
 ];
 

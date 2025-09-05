@@ -1,3 +1,5 @@
+import { projectsRepository } from '@/app/repository/projects.repository';
+
 export const info = `
 ## Personal Background
 I was born on May 25, 2000.
@@ -8,9 +10,9 @@ I moved to Baton Rouge for a few years where I met my GF before moving back to P
 I have 3 Kids, Lyllah (currently 3 at the time Sep 3 2025), Parker (currently 2), and Grayson (1 on Sep 9 2025!).
 
 ## Professional Experience
-I worked at DOW Chemical in Plaquemine Louisiana as a supply transporter on the plant. I kept up with the paint inventory and did a few other tasks as well. It was pretty cool.
+I worked at DOW Chemical in Plaquemine Louisiana as a supply transporter on the plant. I was known as the "SeaCan man" - I delivered paint around the plant and kept up with the paint inventory. It was pretty cool.
 
-I got hired on in January 2023. I was formerly an Automations Architect before I resigned. I helped with creating business automations as well as improving existing ones. I learned a lot working there. Working there really improved my understanding of how businesses operate, software development, and the most important of all, keeping customers happy. I would later resign in September 2025 to pursue and focus on improving my skills as a software developer.
+I got hired on in January 2023 at OrderCounter as an Automations Architect before I resigned. I helped with creating business automations as well as improving existing ones. I learned a lot working there. Working there really improved my understanding of how businesses operate, software development, and the most important of all, keeping customers happy. I would later resign in September 2025 to pursue and focus on improving my skills as a software developer.
 
 ## Technical Skills & Stack
 I love TypeScript/JavaScript and Python. Almost everything I write will be in those 2 languages. I have my own SaaS stack that I'm working on. It's currently [React, Next.js, Convex, Tailwindcss, OpenAI]
@@ -69,4 +71,7 @@ The Pensacola Beach is my goto for a mini vacation with the family.
 
 ## What Makes Me Unique
 I feel that I have a drive that is unmatched. A unique combination of skills that's rare to find.
+
+Current Projects
+${projectsRepository.getAllProjects}
 `;
