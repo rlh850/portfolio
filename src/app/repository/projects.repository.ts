@@ -35,7 +35,7 @@ export const projects: Project[] = [
          { name: 'TypeScript', icon: SiTypescript },
          { name: 'Tailwind CSS', icon: SiTailwindcss },
       ],
-      githubUrl: 'https://github.com/rlh850/portfolio',
+      githubUrl: 'https://github.com/rlh850/next-saas-ai-starter',
       liveUrl: '#',
       status: 'Live',
    },
