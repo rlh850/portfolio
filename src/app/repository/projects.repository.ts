@@ -49,7 +49,7 @@ export const projects: Project[] = [
          { name: 'Tailwind CSS', icon: SiTailwindcss },
       ],
       githubUrl: 'https://github.com/rlh850/RecipeCGI',
-      liveUrl: '#',
+      liveUrl: 'https://recipe-cgi.vercel.app/',
       status: 'In Progress',
    },
    // More projects go here
