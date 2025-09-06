@@ -35,7 +35,7 @@ export const projects: Project[] = [
          { name: 'TypeScript', icon: SiTypescript },
          { name: 'Tailwind CSS', icon: SiTailwindcss },
       ],
-      githubUrl: 'https://github.com/rlh850/next-saas-ai-starter',
+      githubUrl: 'https://github.com/rlh850/saas-starter',
       liveUrl: '#',
       status: 'Live',
    },
@@ -49,7 +49,7 @@ export const projects: Project[] = [
          { name: 'Tailwind CSS', icon: SiTailwindcss },
       ],
       githubUrl: 'https://github.com/rlh850/RecipeCGI',
-      liveUrl: '#',
+      liveUrl: 'https://recipe-cgi.vercel.app/',
       status: 'In Progress',
    },
    // More projects go here
