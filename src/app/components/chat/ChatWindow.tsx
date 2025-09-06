@@ -62,8 +62,8 @@ const ChatWindow = () => {
 
    return (
       <div className="mt-5 font-mono">
-         <div className="gradient-border w-full max-w-2xl rounded-2xl">
-            <div className="bg-white h-96 rounded-2xl flex flex-col">
+         <div className="gradient-border w-full max-w-2xl mx-auto rounded-2xl">
+            <div className="bg-white h-80 md:h-96 rounded-2xl flex flex-col">
                <ChatMessagesArea messages={messages} />
                <ChatInputArea
                   inputText={inputText}
