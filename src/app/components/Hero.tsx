@@ -54,7 +54,7 @@ const Hero = () => {
             transition={{ delay: 1.5, duration: 0.8 }}
          >
             <a
-               href="https://github.com/rlh850/next-saas-ai-starter"
+               href="https://github.com/rlh850/portfolio"
                target="_blank"
                rel="noopener noreferrer"
                className="
